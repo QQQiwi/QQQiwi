@@ -1,0 +1,275 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage[T2A]{fontenc}
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+
+% Custom font
+\usepackage[default]{lato}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+
+
+%-------------------------%
+% Custom commands
+\begin{document}
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{Black}{RGB}{0, 0, 0}
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+
+%-------------------------------------------%
+%%%%%%  RESUME STARTS HERE  %%%%%
+
+%----------HEADING----------%
+\begin{center}
+    \textbf{\Huge \scshape Иван Улитин} \\ \vspace{1pt}
+    \seticon{faPhone} \ \small +7 (960) 343 63 95 \quad
+    \href{https://t.me/qqq_iwi}{\seticon{faTelegram} \underline{@qqq\_iwi}} \ \quad
+    \href{mailto:qqqiwi.prog@gmail.com}{\seticon{faEnvelope} \underline{qqqiwi.prog@gmail.com
+}} \quad
+    %\href{https://www.linkedin.com/in/}{\seticon{faLinkedin} \underline{linkedin.com/firstlast}} \quad
+    \href{https://github.com/QQQiwi}{\seticon{faGithub} \underline{github.com/QQQiwi}}
+\end{center}
+
+%-----------SKILLS-----------%
+\section{Технические навыки}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\textbf{Языки}{: Python, SQL, Rust, JavaScript, Dart, Cypher, Java,  Ruby} \\
+		\textbf{Технологии}{: PyTorch, Transformers, pandas, Seaborn, Scikit-learn, LLM, RAG, LangChain, Docker, Kubernetes, AWS, GCP, Git, Dagster/Airflow, SQL, NoSQL, S3, Clickhouse, Linux, FastAPI} \\
+		\textbf{Концепции}{: анализ данных, теория вероятностей и матем. статистика, машинное обучение, глубокое обучение, компьютерное зрение, обработка естественного языка, временные ряды, менеджмент}
+	}}
+    \end{itemize}
+
+%-----------EXPERIENCE-----------%
+\section{Опыт работы}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+    {\href{link_to_company}{\underline{Orb Intelligence}}}{Сентябрь 2024 -- текущий момент}
+    {Data Scientist, Менеджер по разметке данных}{Калифорния, удаленная работа}
+    \resumeItemListStart
+        \resumeItem{Создание, поддержка и оптимизация дата-пайплайнов.}
+            \begin{enumerate}
+                \item Опробывание технологии AlloyDB от Google;
+                \item Оптимизация ELT-пайплайна, обрабатывающего данные в PostgreSQL, S3, Clickhouse;
+                \item Настройка системы оповещений в Telegram с помощью сенсоров в Dagster;
+                \item Создание ассетов для модернизации и расширения функционала ELT-пайплайна в Dagster;
+                \item Деплой в Kubernetes.
+            \end{enumerate}
+        \resumeItem{Менеджмент и управление процессом разметки данных.}
+            \begin{enumerate}
+                \item Анализ рынка труда и формулировка вакансии;
+                \item Создание тестового задания и собеседование кандидатов;
+                \item Обучение команды разметчиков;
+                \item Менеджмент команды, формулировка задач. Размер команды под управлением - 8-14 человек.
+            \end{enumerate}
+        \resumeItem{Эксперименты, проверка гипотез о применении LLM для решения задачи поиска информации по ключевым словам.}
+            \begin{enumerate}
+                \item Сравнительный анализ и тестирование LLM-агентов с открытым исходным кодом;
+                \item Работа с OpenAI API, Gemini API, Perplexity API. Промпт-инженеринг, создание LLM-пайплайнов;
+                \item Формулировка задач для команды разметки данных для создания Ground Truth набора данных для экспериментов;
+                \item Оценка значений бизнес-метрик, улучшаемых с помощью данных экспериментов.
+            \end{enumerate}
+        \resumeItem{Эксперимент с решением задачи векторного поиска.}
+            \begin{enumerate}
+                \item Аугментация данных для получения различных векторных представлений;
+                \item Изучение и эксперименты с векторными базами данных Qdrant, Milvus;
+                \item Получение результатов со следующими \textbf{метриками: recall@1 = 0.997, recall@10 = 0.998, recall@30 = 0.998, recall@100 = 0.998}.
+            \end{enumerate}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {\href{link_to_company}{\underline{Институт проблем точной механики и управления РАН}}}{Июнь 2022 -- текущий момент}
+    {Инженер-исследователь}{Саратов, удаленная работа}
+    \resumeItemListStart
+        \resumeItem{Создания мобильного приложения и telegram-бота для классификации степени варикоза у пациента.}
+
+            \begin{enumerate}
+                \item Парсинг данных с помощью веб-краулера и вебдрайвера (Scrapy и Selenium), а также обработка данных, полученных в результате работы парсера;
+                \item Обучение ResNet50 для классификации фотографий с ногами и обычных фото (бинарная классификация);
+                \item Обучение ResNet50 и различных моделей-трасформеров (ViT, DeiT) в качестве baseline для классификации степени варикоза на фото (мультиклассовая классификация);
+                \item Написание frontend части на языке Dart (мобильное приложение на фреймворке flutter), которая взаимодействует с python-сервером на библиотеке flask;
+                \item Осуществление нагрузочного тестирования с помощью JMeter, юнит-тестирование;
+                \item Участие в написании научной статьи и выступление на конференциях по результатам проекта: \href{https://www.mdpi.com/2227-7390/10/19/3571}{\textbf{ссылка на статью с результатами}}.
+            \end{enumerate}
+
+        \resumeItem{Классификация спутниковых данных в виде мультивариативного временного ряда для определение аврорального километрового радиоизлучения.}
+
+            \begin{enumerate}
+                \item Предобработка исходных данных со спутника.
+                \item Поиск и обучение baseline-моделей для задачи (Random Forest, kNN, SVM, CatBoost); Feature engineering для временных рядов;
+                \item Оценка качества предсказаний моделей;
+                \item Написание тезисов по результатам экспериментов с моделями: \href{https://www.elibrary.ru/bgrpzs}{\textbf{ссылка на аннотацию тезисов в РИНЦ}}.
+            \end{enumerate}
+        
+        \resumeItem{Подготовка учебного курса по анализу временных рядов с помощью МО.}
+
+            \begin{enumerate}
+                \item Подготовка и использование ARMA, ARIMA, SARIMA и др. алгоритмов для предсказания значения временного ряда;
+                \item Применение разных алгоритмов для feature engineering, актуальных для временных рядов (преобразование Фурье, шейплеты и др.);
+                \item Подготовка и использование нейросетей для задач предсказания значения, классификации, генерации временных рядов (например, LSTM);
+                \item Написание документации и подготовка материалов для студентов: \href{https://github.com/marina-cyber/perm__ml_ai/tree/main/timeseries}{\textbf{ссылка на репозиторий}}.
+            \end{enumerate}
+        
+        \resumeItem{Подготовка курса по компьютерному зрению.}
+
+            \begin{enumerate}
+                \item Подготовка и использования различных методов предобработки изображений (фильтр Прюитт, фильтр Собеля и т.д.);
+                \item Подготовка и использование нейросетей (в том числе трансформеров) для задач классификации, сегментации изображений, VQA;
+                \item Написание документации и подготовка материалов для студентов.
+            \end{enumerate}
+        
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {\href{link_to_company}{\underline{TapBank}}}{Апрель 2024 -- Март 2025}
+    {Программист, Data Scientist}{Москва, удаленная работа}
+    \resumeItemListStart
+        \resumeItem{Создание чат-бота для ответов на вопросы клиентов по продукту.}
+            \begin{enumerate}
+                \item Предобработка неоднородных данных документации (текстовые инструкции, примеры кода, ссылки, изображения);
+                \item Создание синтетической выборки вопросов/ответов;
+                \item Работа с графовыми и векторными базами данных (neo4j, pinecone, chroma, faiss);
+                \item Построение LLM-пайплайнов с помощью LangChain;
+                \item Эксперименты с построением архитектур взаимодействия с LLM: RAG, RAPTOR, GraphRAG. Метрика оценки качества - Cosine Similarity между ответом LLM и ответом аннотатора: \textbf{0.74};
+                \item Деплой на AWS.
+            \end{enumerate}
+        \resumeItem{Эксперимент с созданием LLM-агента для генерации кода эндпойнтов.}
+            \begin{enumerate}
+                \item Создание тестовой выборки относительно разных паттернов проектирования;
+                \item Zero-shot, Few-shot реализация на основе OpenAI API;
+                \item Оценка с помощью Human Evaluation.
+            \end{enumerate}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------%
+\section{Проекты}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\href{https://github.com/QQQiwi/diploma}{\textbf{Выявление аномалий в многомерных временных рядах}} $|$ \emph{Pandas, Seaborn, SciPy, PyTS, transformers}}    {Диплом, 2025}
+    \resumeItemListStart
+        \resumeItem{Изучение ИИ-методов для обнаружения аномалий в мультивариативных временных рядах и выбор подходящих подходов.}
+        \resumeItem{Предобработка спутниковых данных — нормализация, очистка от выбросов и приведение к единому формату.}
+        \resumeItem{Тестирование классических моделей (TimeSeriesForest, kNN, CatBoost), сравнение их эффективности, настройка гиперпараметров.}
+        \resumeItem{Сведение задачи к задаче компьютерного зрения (создание спектрограмм с различными параметрами на основе исходных данных), эксперименты с CV-моделями (ResNet34, Xception, ViT).}
+        \resumeItem{Аугментация, настройка моделей и улучшение предобработки для повышения точности.}
+        \resumeItem{Подготовка текста, иллюстраций, таблиц и презентации для защиты работы.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\href{project_link}{\textbf{Сервис сбора статистики о вакансиях}} $|$ \emph{FastAPI, PostgreSQL, Selenium/BS4, React, AWS, GCP}}    {Фриланс, 2024}
+    \resumeItemListStart
+        \resumeItem{Разработка Python-скрипта для парсинга вакансий по регионам с сервисов Avito, HeadHunter.}
+        \resumeItem{Создание логики процессинга описания вакансий для определения её важных составляющих элементов (с помощью расстояния Левенштейна, предварительной лемматизации и т.п.).}
+        \resumeItem{Создание web-приложения на React и NodeJS для визуализации получаемой статистики.}
+        \resumeItem{Докеризация сервисов, деплой на AWS, GCP.}
+        \resumeItem{Написание документации, тех. поддержка продукта.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+{\href{project_link}{\textbf{Мультиклассовая классификация мультивариативного временного ряда}} $|$ \emph{PyTorch}}    {{Летняя практика}, 2021}
+    \resumeItemListStart
+        \resumeItem {В рамках R\&D во время летней практики в компании Grid Dynamics изучал возможность обнаружения аномалий во временных рядах с помощью алгоритмов компьютерного зрения.}
+        \resumeItem{Осуществлял аугментацию путем создания алгоритмов генерации похожих данных на основе доменных знаний о продукте (значения датчиков-буйков в топливных резервуарах) с помощью линейной интерполяции.}
+        \resumeItem{Проводил сравнительный анализ алгоритмов и подходов для определения 5 видов аномалий. \textbf{Значения метрики оценки - Area Under PR Curve: 0.776, 0.488, 0.294, 0.842, 0.357}.}
+    \resumeItemListEnd
+
+%-----------EDUCATION-----------%
+\resumeSubHeadingListEnd
+\section{Образование}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+    {Саратовский государственный университет}{Сентябрь 2019 -- Февраль 2025}
+    {Оконченное высшее с отл., специалитет "Мат. методы защиты информации"}{Саратов}
+    \resumeSubHeadingListEnd
+
+
+\section{Увлечения}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+	Фотография/видеомонтаж, блог, пауэрлифтинг, игра на музыкальных инструментах.
+}}
+\end{itemize}
+%-------------------------------------------%
+\end{document}
