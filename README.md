@@ -6,11 +6,23 @@
 
 ## About Me
 
-* Data Scientist with an engineering background
+* Data Scientist / ML Infrastructure Engineer with an engineering background
 * Data annotation manager (team of 8–14 people)
 * Experience in R\&D projects involving LLMs, CV, and time series
-* Production experience with LLMs and RAG (LangChain, GraphRAG)
+* Production experience with LLM infrastructure, RAG systems, and large-scale inference
+* Hands-on experience serving DeepSeek, GLM, and Qwen model families on multi-node GPU clusters
 * Teaching experience: courses on ML, CV, and Time Series
+
+---
+
+## Experience Highlights
+
+* **Sberbank — Lead Data Research Expert** *(Sep 2025 — Present)*
+  * Deployed and maintained multi-node inference infrastructure for large LLMs: DeepSeek v4, GLM 5.1, Qwen 2.5, Qwen 3, Qwen 3.5, including dense and MoE models from 4B to 400B parameters.
+  * Worked with SLURM job orchestration and GPU cluster operations across up to 16 H100 nodes and 8 A100 nodes.
+  * Built Docker images, configured recent vLLM versions, tuned model serving parameters, and improved model throughput.
+  * Maintained research infrastructure for 50–60 researchers, including GitLab, ClearML, reverse proxies, and internal services.
+  * Managed infrastructure capacity and GPU resource allocation between multiple research teams.
 
 ---
 
@@ -38,6 +50,7 @@
   <img src="https://img.shields.io/badge/Transformers-F8BF3C?style=for-the-badge&logo=huggingface&logoColor=black"/>
   <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
   <img src="https://img.shields.io/badge/LLM-4B0082?style=for-the-badge" alt="LLM"/>
+  <img src="https://img.shields.io/badge/vLLM-111827?style=for-the-badge" alt="vLLM"/>
   <img src="https://img.shields.io/badge/RAG-006400?style=for-the-badge" alt="RAG"/>
   <img src="https://img.shields.io/badge/LangChain-000000?style=for-the-badge&logo=langchain&logoColor=white"/>
   <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
@@ -53,6 +66,9 @@
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SLURM-2E8B57?style=for-the-badge" alt="SLURM"/>
+  <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white"/>
+  <img src="https://img.shields.io/badge/ClearML-5A4FCF?style=for-the-badge" alt="ClearML"/>
 </p>
 
 ### Databases & Orchestration

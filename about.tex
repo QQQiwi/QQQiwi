@@ -113,7 +113,7 @@
     \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
 		\textbf{Языки}{: Python, SQL, Rust, JavaScript, Dart, Cypher, Java,  Ruby} \\
-		\textbf{Технологии}{: PyTorch, Transformers, pandas, Seaborn, Scikit-learn, LLM, RAG, LangChain, Docker, Kubernetes, AWS, GCP, Git, Dagster/Airflow, SQL, NoSQL, S3, Clickhouse, Linux, FastAPI} \\
+		\textbf{Технологии}{: PyTorch, Transformers, vLLM, SLURM, Docker, Kubernetes, GitLab, ClearML, Linux, LLM, RAG, LangChain, pandas, Seaborn, Scikit-learn, AWS, GCP, Git, Dagster/Airflow, SQL, NoSQL, S3, Clickhouse, FastAPI} \\
 		\textbf{Концепции}{: анализ данных, теория вероятностей и матем. статистика, машинное обучение, глубокое обучение, компьютерное зрение, обработка естественного языка, временные ряды, менеджмент}
 	}}
     \end{itemize}
@@ -121,6 +121,17 @@
 %-----------EXPERIENCE-----------%
 \section{Опыт работы}
 \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {\href{https://www.sberbank.com/}{\underline{Сбербанк}}}{Сентябрь 2025 -- текущий момент}
+    {Ведущий эксперт по исследованию данных}{Москва}
+    \resumeItemListStart
+        \resumeItem{Поднимал и сопровождал inference-инфраструктуру для крупных LLM на GPU-кластерах: DeepSeek v4, GLM 5.1, Qwen 2.5, Qwen 3, Qwen 3.5 различных размерностей от 4B до 400B, включая MoE-модели.}
+        \resumeItem{Работал с мультинодовым запуском и системой джобов SLURM: инициализация, конфигурация и поднятие вычислительных задач на кластерах до 16 нод H100 и 8 нод A100.}
+        \resumeItem{Эксплуатировал vLLM последних версий: собирал Docker-образы, настраивал параметры сервинга и оптимизировал конфигурации для повышения throughput моделей.}
+        \resumeItem{Разворачивал и поддерживал инфраструктурные сервисы для 50--60 исследователей, включая GitLab и ClearML; поднимал reverse-proxy и обеспечивал доступность внутренних сервисов.}
+        \resumeItem{Занимался менеджментом инфраструктуры и перераспределением GPU-ресурсов между исследовательскими командами с учетом приоритетов задач и загрузки кластера.}
+    \resumeItemListEnd
 
     \resumeSubheading
     {\href{link_to_company}{\underline{Orb Intelligence}}}{Сентябрь 2024 -- текущий момент}
