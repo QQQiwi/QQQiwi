@@ -22,18 +22,13 @@
   * Deployed and maintained multi-node inference infrastructure for large LLMs: DeepSeek v4, GLM 5.1, Qwen 2.5, Qwen 3, Qwen 3.5, including dense and MoE models from 4B to 400B parameters.
   * Worked with SLURM job orchestration and GPU cluster operations across up to 16 H100 nodes and 8 A100 nodes.
   * Built Docker images, configured recent vLLM versions, tuned model serving parameters, and improved model throughput.
-  * Maintained research infrastructure for 50–60 researchers, including GitLab, ClearML, reverse proxies, and internal services.
-  * Managed infrastructure capacity and GPU resource allocation between multiple research teams.
-
-* **Sberbank — Infrastructure Team (internal platform)** *(Dec 2025 — Present)*
-  * Tracked 280+ issues (230+ closed) across 30 internal repositories covering platform services, observability, and research tooling.
-  * **Self-hosted platform services:** deployed and operated GitLab CE→EE migration, GitLab Pages/runners/registry, self-hosted Overleaf (GitLab OIDC SSO, automated MongoDB/OBS backups), CryptPad, mail service, and CI/CD templates for multi-contour deployment (prod/dev).
-  * **Observability:** built Grafana + Prometheus monitoring for GPU clusters and NFS/tenant metrics; streaming metrics from ML Space and VPS fleet into dashboards; log aggregation via Dozzle across all VPS.
-  * **LLM serving platform:** an internal OpenAI-compatible inference gateway with API-key management, per-user token usage analytics, GitLab group-based access control, and inference benchmarking scripts for vLLM.
-  * **AI agents:** built Telegram-facing Hermes-based AI agent platform with user profile separation, incident reporting, MCP tooling for demo deployments, and GPU resource management via Cloud.ru API.
-  * **Reverse proxy & edge:** Traefik/Nginx edge with automatic TLS, FRP-based tunneling for demo services, OAuth2 SSO gate reused across services on the *.frontierai.ru domain.
-  * **Research & demo projects:** multimodal search demo (ANTIQ — Qdrant/Postgres ingestion pipeline over 40+ auction sources), inference monitoring portal, demo-analytics service, conference digest parser/bot, LaTeX build service for paper polishing, and MR-review agent.
-  * **Operations:** GPU/CPU allocation requests, S3 bucket lifecycle (SberCloud OBS), incident response (node failures, DNS, storage), data transfers between GigaLearn/ML Space contours, VPS provisioning and headscale private network.
+  * Deployed and operated internal platform services for 50–60 researchers: GitLab (CE→EE migration, Pages, runners), self-hosted Overleaf (OIDC SSO, automated backups), CryptPad, mail service, ClearML, and CI/CD templates for multi-contour deployment.
+  * Built an observability stack: Grafana + Prometheus monitoring for GPU clusters, NFS/tenant metrics, and log aggregation across the VPS fleet.
+  * Built an internal OpenAI-compatible inference gateway with API-key management, per-user token usage analytics, GitLab group-based access control, and vLLM benchmarking.
+  * Developed a Telegram-facing AI-agent platform (Hermes-based): user profile separation, incident reporting, MCP tooling, and GPU resource management via Cloud.ru API.
+  * Ran the edge layer: Traefik/Nginx with automatic TLS, FRP tunneling for demo services, and a reusable OAuth2 SSO gate across internal domains.
+  * Managed infrastructure capacity and GPU resource allocation between research teams; handled S3/OBS bucket lifecycle, incident response, and data transfers between compute contours.
+  * Built research and demo tooling: multimodal search demo (Qdrant/Postgres ingestion pipeline over 40+ auction sources), inference monitoring portal, demo-analytics service, conference digest bot, LaTeX build service, and MR-review agent.
 
 ---
 
@@ -94,20 +89,20 @@
 
 ## 📄 Most cited papers
 
-1. **Deep learning approaches to automatic chronic venous disease classification (18 citations)**  
+1. **Deep learning approaches to automatic chronic venous disease classification (16 citations)**  
    *Barulina, M.; Sanbaev, A.; Okunkov, S.; Ulitin, I.; Okoneshnikov, I.*  
    *Mathematics*, **10**(19), 3571, 2022 — MDPI  
    🔗 [DOI:10.3390/math10193571](https://doi.org/10.3390/math10193571)
 
-2. **Sensitivity of modern deep learning neural networks to unbalanced datasets in multiclass classification problems (9 citations)**  
+2. **Sensitivity of modern deep learning neural networks to unbalanced datasets in multiclass classification problems (10 citations)**  
    *Barulina, M.; Okunkov, S.; Ulitin, I.; Sanbaev, A.*  
    *Applied Sciences*, **13**(15), 8614, 2023 — MDPI  
    🔗 [DOI:10.3390/app13158614](https://doi.org/10.3390/app13158614)
 
-3. **An Overview of Using Deep Learning Algorithms for Anemia Detection (3 citations)**  
+3. **An Overview of Using Deep Learning Algorithms for Anemia Detection (2 citations)**  
    *Barulina, M.; Ulitin, I.; Kaluta, T.; Fedonnikov, A.*  
    *Artificial Intelligence in Engineering and Science (AI2ES 2022)*, Springer, pp. 605–615  
-   🔗 [Springer Link](https://link.springer.com/chapter/10.1007/978-3-031-24215-4_60)
+   🔗 [Springer Link](https://link.springer.com/chapter/10.1007/978-3-031-22938-1_41)
 
 
 ---
