@@ -7,6 +7,7 @@
 ## About Me
 
 * Data Scientist / ML Infrastructure Engineer with an engineering background
+* Platform & ML infrastructure engineer for a large AI research division: self-hosted services, observability, LLM gateways, AI-agent tooling
 * Data annotation manager (team of 8–14 people)
 * Experience in R\&D projects involving LLMs, CV, and time series
 * Production experience with LLM infrastructure, RAG systems, and large-scale inference
@@ -17,12 +18,17 @@
 
 ## Experience Highlights
 
-* **Sberbank — Lead Data Research Expert** *(Sep 2025 — Present)*
-  * Deployed and maintained multi-node inference infrastructure for large LLMs: DeepSeek v4, GLM 5.1, Qwen 2.5, Qwen 3, Qwen 3.5, including dense and MoE models from 4B to 400B parameters.
+* **Sberbank — Lead Infrastructure Engineer** *(Sep 2025 — Present)*
+  * Deployed and maintained multi-node inference infrastructure for large LLMs: DeepSeek v4, GLM 5.1, GLM 5.3 Flash, Qwen 2.5, Qwen 3, Qwen 3.5, including dense and MoE models from 4B to 400B parameters.
   * Worked with SLURM job orchestration and GPU cluster operations across up to 16 H100 nodes and 8 A100 nodes.
   * Built Docker images, configured recent vLLM versions, tuned model serving parameters, and improved model throughput.
-  * Maintained research infrastructure for 50–60 researchers, including GitLab, ClearML, reverse proxies, and internal services.
-  * Managed infrastructure capacity and GPU resource allocation between multiple research teams.
+  * Deployed and operated internal platform services for 50–60 researchers: GitLab (CE→EE migration, Pages, runners), self-hosted Overleaf (OIDC SSO, automated backups), CryptPad, mail service, ClearML, and CI/CD templates for multi-contour deployment.
+  * Built an observability stack: Grafana + Prometheus monitoring for GPU clusters, NFS/tenant metrics, and log aggregation across the VPS fleet.
+  * Built an internal OpenAI-compatible inference gateway with API-key management, per-user token usage analytics, GitLab group-based access control, and vLLM benchmarking.
+  * Developed a Telegram-facing AI-agent platform (Hermes-based): user profile separation, incident reporting, MCP tooling, and GPU resource management via Cloud.ru API.
+  * Ran the edge layer: Traefik/Nginx with automatic TLS, FRP tunneling for demo services, and a reusable OAuth2 SSO gate across internal domains.
+  * Managed infrastructure capacity and GPU resource allocation between research teams; handled S3/OBS bucket lifecycle, incident response, and data transfers between compute contours.
+  * Built research and demo tooling: multimodal search demo (Qdrant/Postgres ingestion pipeline over 40+ auction sources), inference monitoring portal, demo-analytics service, conference digest bot, LaTeX build service, and MR-review agent.
 
 ---
 
@@ -83,20 +89,20 @@
 
 ## 📄 Most cited papers
 
-1. **Deep learning approaches to automatic chronic venous disease classification (18 citations)**  
+1. **Deep learning approaches to automatic chronic venous disease classification (35 citations)**  
    *Barulina, M.; Sanbaev, A.; Okunkov, S.; Ulitin, I.; Okoneshnikov, I.*  
    *Mathematics*, **10**(19), 3571, 2022 — MDPI  
    🔗 [DOI:10.3390/math10193571](https://doi.org/10.3390/math10193571)
 
-2. **Sensitivity of modern deep learning neural networks to unbalanced datasets in multiclass classification problems (9 citations)**  
+2. **Sensitivity of modern deep learning neural networks to unbalanced datasets in multiclass classification problems (18 citations)**  
    *Barulina, M.; Okunkov, S.; Ulitin, I.; Sanbaev, A.*  
    *Applied Sciences*, **13**(15), 8614, 2023 — MDPI  
    🔗 [DOI:10.3390/app13158614](https://doi.org/10.3390/app13158614)
 
-3. **An Overview of Using Deep Learning Algorithms for Anemia Detection (3 citations)**  
+3. **An Overview of Using Deep Learning Algorithms for Anemia Detection (5 citations)**  
    *Barulina, M.; Ulitin, I.; Kaluta, T.; Fedonnikov, A.*  
    *Artificial Intelligence in Engineering and Science (AI2ES 2022)*, Springer, pp. 605–615  
-   🔗 [Springer Link](https://link.springer.com/chapter/10.1007/978-3-031-24215-4_60)
+   🔗 [Springer Link](https://link.springer.com/chapter/10.1007/978-3-031-22938-1_41)
 
 
 ---
