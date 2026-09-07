@@ -18,8 +18,8 @@
 
 ## Experience Highlights
 
-* **Sberbank — Lead Data Research Expert** *(Sep 2025 — Present)*
-  * Deployed and maintained multi-node inference infrastructure for large LLMs: DeepSeek v4, GLM 5.1, Qwen 2.5, Qwen 3, Qwen 3.5, including dense and MoE models from 4B to 400B parameters.
+* **Sberbank — Lead Infrastructure Engineer** *(Sep 2025 — Present)*
+  * Deployed and maintained multi-node inference infrastructure for large LLMs: DeepSeek v4, GLM 5.1, GLM 5.3 Flash, Qwen 2.5, Qwen 3, Qwen 3.5, including dense and MoE models from 4B to 400B parameters.
   * Worked with SLURM job orchestration and GPU cluster operations across up to 16 H100 nodes and 8 A100 nodes.
   * Built Docker images, configured recent vLLM versions, tuned model serving parameters, and improved model throughput.
   * Deployed and operated internal platform services for 50–60 researchers: GitLab (CE→EE migration, Pages, runners), self-hosted Overleaf (OIDC SSO, automated backups), CryptPad, mail service, ClearML, and CI/CD templates for multi-contour deployment.
