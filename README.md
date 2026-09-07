@@ -89,17 +89,17 @@
 
 ## 📄 Most cited papers
 
-1. **Deep learning approaches to automatic chronic venous disease classification (16 citations)**  
+1. **Deep learning approaches to automatic chronic venous disease classification (35 citations)**  
    *Barulina, M.; Sanbaev, A.; Okunkov, S.; Ulitin, I.; Okoneshnikov, I.*  
    *Mathematics*, **10**(19), 3571, 2022 — MDPI  
    🔗 [DOI:10.3390/math10193571](https://doi.org/10.3390/math10193571)
 
-2. **Sensitivity of modern deep learning neural networks to unbalanced datasets in multiclass classification problems (10 citations)**  
+2. **Sensitivity of modern deep learning neural networks to unbalanced datasets in multiclass classification problems (18 citations)**  
    *Barulina, M.; Okunkov, S.; Ulitin, I.; Sanbaev, A.*  
    *Applied Sciences*, **13**(15), 8614, 2023 — MDPI  
    🔗 [DOI:10.3390/app13158614](https://doi.org/10.3390/app13158614)
 
-3. **An Overview of Using Deep Learning Algorithms for Anemia Detection (2 citations)**  
+3. **An Overview of Using Deep Learning Algorithms for Anemia Detection (5 citations)**  
    *Barulina, M.; Ulitin, I.; Kaluta, T.; Fedonnikov, A.*  
    *Artificial Intelligence in Engineering and Science (AI2ES 2022)*, Springer, pp. 605–615  
    🔗 [Springer Link](https://link.springer.com/chapter/10.1007/978-3-031-22938-1_41)
