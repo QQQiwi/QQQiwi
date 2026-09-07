@@ -7,6 +7,7 @@
 ## About Me
 
 * Data Scientist / ML Infrastructure Engineer with an engineering background
+* Platform & ML infrastructure engineer for a large AI research division: self-hosted services, observability, LLM gateways, AI-agent tooling
 * Data annotation manager (team of 8–14 people)
 * Experience in R\&D projects involving LLMs, CV, and time series
 * Production experience with LLM infrastructure, RAG systems, and large-scale inference
@@ -23,6 +24,16 @@
   * Built Docker images, configured recent vLLM versions, tuned model serving parameters, and improved model throughput.
   * Maintained research infrastructure for 50–60 researchers, including GitLab, ClearML, reverse proxies, and internal services.
   * Managed infrastructure capacity and GPU resource allocation between multiple research teams.
+
+* **Sberbank — Infrastructure Team (internal platform)** *(Dec 2025 — Present)*
+  * Tracked 280+ issues (230+ closed) across 30 internal repositories covering platform services, observability, and research tooling.
+  * **Self-hosted platform services:** deployed and operated GitLab CE→EE migration, GitLab Pages/runners/registry, self-hosted Overleaf (GitLab OIDC SSO, automated MongoDB/OBS backups), CryptPad, mail service, and CI/CD templates for multi-contour deployment (prod/dev).
+  * **Observability:** built Grafana + Prometheus monitoring for GPU clusters and NFS/tenant metrics; streaming metrics from ML Space and VPS fleet into dashboards; log aggregation via Dozzle across all VPS.
+  * **LLM serving platform:** an internal OpenAI-compatible inference gateway with API-key management, per-user token usage analytics, GitLab group-based access control, and inference benchmarking scripts for vLLM.
+  * **AI agents:** built Telegram-facing Hermes-based AI agent platform with user profile separation, incident reporting, MCP tooling for demo deployments, and GPU resource management via Cloud.ru API.
+  * **Reverse proxy & edge:** Traefik/Nginx edge with automatic TLS, FRP-based tunneling for demo services, OAuth2 SSO gate reused across services on the *.frontierai.ru domain.
+  * **Research & demo projects:** multimodal search demo (ANTIQ — Qdrant/Postgres ingestion pipeline over 40+ auction sources), inference monitoring portal, demo-analytics service, conference digest parser/bot, LaTeX build service for paper polishing, and MR-review agent.
+  * **Operations:** GPU/CPU allocation requests, S3 bucket lifecycle (SberCloud OBS), incident response (node failures, DNS, storage), data transfers between GigaLearn/ML Space contours, VPS provisioning and headscale private network.
 
 ---
 
