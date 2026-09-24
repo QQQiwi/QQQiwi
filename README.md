@@ -19,8 +19,8 @@
 ## Experience Highlights
 
 * **Sberbank — Lead Infrastructure Engineer** *(Sep 2025 — Present)*
-  * Deployed and maintained multi-node inference infrastructure for large LLMs: DeepSeek v4, GLM 5.1, GLM 5.3 Flash, Qwen 2.5, Qwen 3, Qwen 3.5, including dense and MoE models from 4B to 400B parameters.
-  * Worked with SLURM job orchestration and GPU cluster operations across up to 16 H100 nodes and 8 A100 nodes.
+  * Deployed and maintained multi-node inference infrastructure for large LLMs: DeepSeek v4, GLM 5.1, GLM 5.3 Flash, Qwen 2.5, Qwen 3, Qwen 3.5, Nemotron 3 Ultra 550B, including dense and MoE models from 4B to 550B parameters.
+  * Worked with SLURM job orchestration and GPU cluster operations across up to 16 H100 nodes and 8 A100 nodes; sized LLM deployments for 8×H100/H200 bare-metal configurations (FP8/W4A16 checkpoints, 1M+ context windows, FP8 KV-cache).
   * Built Docker images, configured recent vLLM versions, tuned model serving parameters, and improved model throughput.
   * Deployed and operated internal platform services for 50–60 researchers: GitLab (CE→EE migration, Pages, runners), self-hosted Overleaf (OIDC SSO, automated backups), CryptPad, mail service, ClearML, and CI/CD templates for multi-contour deployment.
   * Built an observability stack: Grafana + Prometheus monitoring for GPU clusters, NFS/tenant metrics, and log aggregation across the VPS fleet.
@@ -29,6 +29,7 @@
   * Ran the edge layer: Traefik/Nginx with automatic TLS, FRP tunneling for demo services, and a reusable OAuth2 SSO gate across internal domains.
   * Managed infrastructure capacity and GPU resource allocation between research teams; handled S3/OBS bucket lifecycle, incident response, and data transfers between compute contours.
   * Built research and demo tooling: multimodal search demo (Qdrant/Postgres ingestion pipeline over 40+ auction sources), inference monitoring portal, demo-analytics service, conference digest bot, LaTeX build service, and MR-review agent.
+  * Built **Noah**, an in-house LLM inference fleet framework: declarative model manifests with weights/replica separation, one-command deployment, and adaptive benchmarking — no Kubernetes required (subject of a conference talk).
 
 ---
 
